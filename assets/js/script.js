@@ -117,3 +117,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Añadir evento de validación al formulario
+form.addEventListener("submit", function (event) {
+  const honeypot = document.querySelector('input[name="honeypot"]').value;
+  const emailField = document.querySelector('input[name="email"]').value;
+
+  // Validación honeypot (anti-spam)
+  if (honeypot) {
+    alert("Error: Detected spam activity.");
+    event.preventDefault(); // Detener envío si se detecta spam
+    return;
+  }
+
+  // Validación de dominio del correo electrónico
+  const validEmailPattern = /^[a-zA-Z0-9._%+-]+@(gmail\.com|outlook\.com|hotmail\.com)$/;
+  if (!validEmailPattern.test(emailField)) {
+    alert("Por favor, ingresa un correo electrónico válido de Gmail, Outlook o Hotmail.");
+    event.preventDefault(); // Detener envío si el email no es válido
+    return;
+  }
+
+  // Si todo es válido, el formulario se envía
+});

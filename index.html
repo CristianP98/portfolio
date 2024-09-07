@@ -9,12 +9,12 @@
 
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script type="text/javascript">
-    (function() {
+    (function () {
       emailjs.init("YOUR_USER_ID"); // Reemplaza con tu User ID de EmailJS
     })();
   </script>
 
-  
+
 
   <!--
     - favicon
@@ -519,7 +519,8 @@
                       alt="SQL" />
                   </span>
                   <span class="icons">
-                    <img width="64" height="64" src="https://img.icons8.com/windows/64/django.png" alt="django" style="filter: invert(100%);"/>
+                    <img width="64" height="64" src="https://img.icons8.com/windows/64/django.png" alt="django"
+                      style="filter: invert(100%);" />
                   </span>
                 </div>
               </div>
@@ -806,7 +807,7 @@
 
 
 
-      
+
       <!--
         - #CONTACT
       -->
@@ -831,15 +832,23 @@
 
           <form action="https://formspree.io/f/mrbzdrvb" method="POST" class="form" data-form>
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Nombre y apellidos" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Dirección de correo electrónico" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre y apellidos" required
+                data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Dirección de correo electrónico" required
+                data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Su mensaje" required data-form-input></textarea>
             <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
+
+              <!-- Honeypot field (hidden) -->
+              <input type="text" name="honeypot" style="display:none;">
+
+
               <span>Enviar mensaje</span>
             </button>
           </form>
+
         </section>
 
       </article>
@@ -861,6 +870,8 @@
   <!--
     - ionicon link
   -->
+
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
