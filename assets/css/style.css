@@ -1367,7 +1367,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% - 64px);
   }
 
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+    max-width: 300px; /* O ajusta según tus necesidades */
+  }
 
+  .info-content .title {
+    margin-bottom: 10px; /* Espaciado entre los elementos, ajustable */
+  }
 
   /**
    * #NAVBAR
@@ -1559,7 +1568,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
+  .info-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos uno debajo del otro */
+  }
 
+  .info-content .title {
+    margin-bottom: 10px; /* Espaciado entre los elementos, ajustable */
+  }
 
   /**
    * SIDEBAR
@@ -1678,7 +1694,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: var(--shadow-5);
   }
 
+  .info-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos uno debajo del otro */
+  }
 
+  .info-content .title {
+    margin-bottom: 10px; /* Espaciado entre los elementos, ajustable */
+  }
 
   /**
    * MAIN 
