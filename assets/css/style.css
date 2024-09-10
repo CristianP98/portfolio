@@ -336,6 +336,10 @@ main {
   border-radius: 20px;
 }
 
+.info-content{
+  justify-content: center;
+  align-items: center;
+}
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -343,8 +347,20 @@ main {
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
+.clase1{
+  margin-bottom: 10px;
+}
 
 .info-content .title {
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+.info-content .title1 {
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
@@ -440,11 +456,11 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 1.85rem;
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { color: hsl(45, 100%, 72%); }
 
 
 
